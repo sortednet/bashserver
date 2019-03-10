@@ -11,7 +11,7 @@ Bashserver listens on port 8080 and has two endpoints
 Example usage
 
 ```
-docker run -p8080:8080 bashserver ls
+docker run -p8080:8080 sortednet/bashserver ls
 ```
 
 Call the server

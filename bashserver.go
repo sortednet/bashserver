@@ -16,10 +16,7 @@ var version = "latest"
 func handler(w http.ResponseWriter, r *http.Request) {
 	if strings.Compare(r.URL.Path, "/version") == 0 {
 		fmt.Fprintf(w, version)
-	} else {
-		// log.Printf("Call %s with args", cmd)	
-		// fmt.Printf("Call %s with args", cmd)	
-		// fmt.Fprintf(w, "Call %s with args", cmd)	
+	} else {	
 		cmdOut, err := exec.Command(cmd, args...).Output();
 		output := string(cmdOut)
 		if err == nil {

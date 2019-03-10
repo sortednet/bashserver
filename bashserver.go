@@ -25,8 +25,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		} else {
 			fmt.Fprintf(w, "There was an error running %s : %s", cmd, err)
 		}
-	}
-	
+	}	
 }
 
 func main() {
